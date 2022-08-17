@@ -5,14 +5,9 @@ h1 {
   text-align: center;
 }
 body {
-  background: linear-gradient(
-    148deg,
-    rgb(115, 236, 252) 0%,
-    rgb(139, 102, 241) 100%
-  );
+  background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
   border: 15px none #885df1;
   border-radius: 20px;
-  background-image: url("/Desktop/Downloaded-pictures/weatherbackup.jpeg");
 }
 
 h2 {
