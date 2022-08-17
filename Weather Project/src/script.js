@@ -7,7 +7,7 @@ let days = [
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday"
+  "Sunday",
 ];
 
 let currentDay = days[now.getDay()];
@@ -24,15 +24,15 @@ let months = [
   "Sept",
   "Oct",
   "Nov",
-  "Dec"
+  "Dec",
 ];
 
 let currentMonth = months[now.getMonth()];
 let currentDate = now.getDate();
 let currentYear = now.getFullYear();
 
-let todaysDate = document.querySelector("#today-date");
-todaysDate.innerHTML = `Today is ${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+let todaysDate = document.querySelector("#todays-date");
+todaysDate.innerHTML = `It's ${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
 
 let currentHour = now.getHours();
 let currentMinutes = now.getMinutes();
@@ -52,7 +52,7 @@ let form = document.querySelector("#city-form");
 addEventListener("submit", search);
 
 function displayCurrentWeather(response) {
-  document.querySelector("#city-heading").innerHTML = response.data.name;
+  document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#temperature-head").innerHTML = `${Math.round(
     response.data.main.temp
   )}° C`;
