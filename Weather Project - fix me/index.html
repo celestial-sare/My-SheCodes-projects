@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <style></style>
+  <secton class ="body">
+    <div class="container">
+      <form class="d-flex" id="search-bar">
+          <input
+          type="search"
+          class="form-control me-2 shadow-sm"
+          placeholder="Enter your city"
+          autofocus="on"
+          id="city-input"
+          required
+          />
+          <button
+          class="btn btn-outline-info search-button"
+          type="submit"
+          id="search-button">Search</button>
+      </form>
+
+      <div><button type="button" class="btn btn-info" id="location-button">Get current location</button></div>
+
+    </div>
+    <h1 id="city-name">
+      Houston 
+    </h1>
+
+
+    <h2 id=todays-date>
+      It's Wednesday, Aug 17, 2022
+    </h2>
+    <h2 id=hour-time>
+      23:04
+    </h2>
+
+
+    <h3 id =temperature-head><i class="fa-solid fa-cloud-rain"></i>  63° F</h3>
+    <span class="unit">
+
+    </span>
+    <p class="precip-stats">
+        Precipitation: 45%
+    </p>
+    <p class="humidity-stats">
+        Winds: East 7 mph
+    </p>
+    <br>
+    <p>
+        <div class="container week-days">
+            <div class="row">
+              <div class="col">Tuesday</div>
+              <div class="col">Wednesday</div>
+              <div class="col">Thursday</div>
+              <div class="col">Friday</div>
+              <div class="col">Saturday</div>
+              <div class="col">Sunday</div>
+            </div>
+          <br>
+            <div class="row">
+              <div class="col rainy-day"><i class="fa-solid fa-cloud-rain"></i></div>
+              <div class="col thunder-storm"><i class="fa-solid fa-cloud-bolt"></i></div>
+              <div class="col cloudy-sun"><i class="fa-solid fa-cloud-sun"></i></div>
+              <div class="col sun-day"><i class="fa-solid fa-sun"></i></div>
+              <div class="col crazy-wind"><i class="fa-solid fa-tornado"></i></div>
+              <div class="col night-cloud"><i class="fa-solid fa-cloud-moon"></i></div>
+            </div>
+  </p>
+
+    <script src="src/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/da128c9b48.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
