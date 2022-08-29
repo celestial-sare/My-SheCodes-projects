@@ -30,17 +30,17 @@ let months = [
 let currentMonth = months[now.getMonth()];
 let currentDate = now.getDate();
 let currentYear = now.getFullYear();
-
-let todaysDate = document.querySelector("#todays-date");
-todaysDate.innerHTML = `It's ${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
-
 let currentHour = now.getHours();
 let currentMinutes = now.getMinutes();
 if (currentMinutes < 10) {
   currentMinutes = `0${currentMinutes}`;
 }
-let currentTime = document.querySelector("#hour-time");
-currentTime.innerHTML = `${currentHour}:${currentMinutes}`;
+
+let currentInfo = document.querySelector("#current-info");
+currentInfo.innerHTML = `${currentDay}, ${currentHour}:${currentMinutes}`;
+
+let fullDate = document.querySelector("#todays-date");
+fullDate.innerHTML = `${currentMonth} ${currentDate}, ${currentYear}`;
 
 function search(event) {
   event.preventDefault();
