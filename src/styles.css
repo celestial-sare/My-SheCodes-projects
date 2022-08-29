@@ -1,74 +1,11 @@
-h1 {
-  text-shadow: 3px 21px 56px rgba(16, 173, 245, 1);
-  color: #10adf5;
-  font-family: "Dosis", sans-serif;
-}
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(253, 239, 132) 0%,
-    rgb(247, 198, 169) 54.2%,
-    rgb(21, 186, 196) 100.3%
-  );
-  border: 15px none #885df1;
-  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-h2 {
-  font-family: "Dosis", sans-serif;
-  text-shadow: 3px -9px 40px rgba(16, 108, 245, 0.3);
-  color: #106cf5;
-}
-
-h3 {
-  font-family: "Dosis", sans-serif;
-}
-
-p {
-  font-family: "Dosis", sans-serif;
-}
-
-.weather-stats {
-  position: static;
-}
-
-.top-search {
-  margin-top: 10%;
-  position: relative;
-  margin-left: 35%;
-}
-
-.form-control-search {
-  margin-left: 15%;
-  margin-top: 35;
-}
-
-.week-days {
-  font-family: "Dosis", sans-serif;
-}
-.rainy-day {
-  color: #4a90e2;
-  font-size: 50px;
-}
-
-.thunder-storm {
-  color: yellow;
-  font-size: 50px;
-  margin-left: 2%;
-}
-.cloudy-sun {
-  color: gray;
-  font-size: 50px;
-}
-.sun-day {
-  color: #e2b84a;
-  font-size: 50px;
-}
-.crazy-wind {
-  color: #50635d;
-  font-size: 50px;
-}
-.night-cloud {
-  color: #095bdb;
-  font-size: 50px;
+.weather-app {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 10px solid #f9f7fd;
+  border-radius: 10px;
 }
