@@ -32,37 +32,47 @@
       <div></div>
 
     <div class="container-lg">
-    <h1 id="city-name">
-      Houston 
+    <h1 id="city">
+       
     </h1>
     <ul>
       </li>
       <li id="current-info">
-        Wednesday, 23:04
+        
       </li>
-      <li>
-        Rainy
+      <li id="description">
+        
       </li>
     </ul>
 
     <div class="row">
-      <div class="col-6" id="temperature-head">
+      <div class="col-6">
+        <div class="clearfix weather-temp">
         <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" 
         alt="Rain"
+        class="float-left"
         />
-        23°C | °F
+        <div class="float-left">
+          <strong id="temperature"></strong
+            ><span class="units">°C | <a href="#">°F</a></span>
+            </div>
+        </div>
       </div>
 
       <div class="col-6">
         <ul>
-          <li>
-            Precipitation: 82%
+          <li id="precip">
+            
+          </li>
+          <li >Humidity:
+          <span id="humidity">
+          </span>
+            %
           </li>
           <li>
-            Humidity: 75%
-          </li>
-          <li>
-            Winds: 10 mph
+            Winds:
+            <span id="windy"></span>
+           km/h
           </li>
         </ul>
       </div>
@@ -70,7 +80,6 @@
 
     <div class="container">
     <h2 id=todays-date>
-      It's Wednesday, Aug 17, 2022
     </h2>
     </div>
 
