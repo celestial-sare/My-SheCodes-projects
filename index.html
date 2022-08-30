@@ -12,33 +12,44 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form" class="mb-5">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+        <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-5">
+            <div class="col-8">
           <input 
           type="search" 
+          id="city-input"
           placeholder="Enter a city..." 
           class="form-control"
           required
           />
+          </div>
+          <div class="col-4">
           <input 
           type="submit" 
           value="Search" 
-          class="btn btn-outline-dark search-button"/>
+          class="btn btn-outline-dark"
+          id="search-button"/>
+          <input 
+          type="button" 
+          class="btn btn-outline-secondary" 
+          id="location-button"
+          value="Current location"
+          />
             </div>
           </div>
         </form>
 
 
+      
 
-          <button type="button" class="btn btn-outline-dark" id="location-button">Current location</button>
-      </form>
-
-      <div></div>
-
-    <div class="container-lg">
+    <div class="container-md">
+      <div class="overview">
     <h1 id="city"></h1>
+    <div>
+          <strong id="temperature"></strong
+            ><span class="units">°C | <a href="#">°F</a></span>
     <ul>
       <li> Last updated: <span id="date"></span></li>
       <li id="description">
@@ -49,13 +60,9 @@
       <div class="col-6">
         <div class="d-flex weather-temperature">
         <img src="" 
-        id="icon"
-        class="float-left"
-        />
-        <div class="float-left">
-          <strong id="temperature"></strong
-            ><span class="units">°C | <a href="#">°F</a></span>
-            </div>
+        id="icon"/>
+        
+          
         </div>
       </div>
 
@@ -81,8 +88,9 @@
     </div>
 
 
-        <div class="container-md">
+        <div class="container">
             <div class="row">
+              <div class="col">Monday</div>
               <div class="col">Tuesday</div>
               <div class="col">Wednesday</div>
               <div class="col">Thursday</div>
@@ -90,8 +98,10 @@
               <div class="col">Saturday</div>
               <div class="col">Sunday</div>
             </div>
+    </div>
   </div>
-  <small>
+  </div>
+   <small>
   <a href="https://github.com/celestial-sare/My-SheCodes-projects" target="blank">Open-source code</a>
   by Sara Chappell
 </small>
