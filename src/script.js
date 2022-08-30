@@ -1,3 +1,21 @@
+function displayTemp(response) {
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = response.data.name;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#windy");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+}
+
+let apiKey = "db75c95658bbbd4df7ff00c9187ad7d2";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dallas&appid=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayTemp);
+
 let now = new Date();
 let days = [
   "Sunday",
@@ -84,3 +102,4 @@ locationButton.addEventListener("click", getCurrentLocation);
 
 let searchForm = document.querySelector("#city-input");
 searchForm.addEventListener("submit", handleSubmit);
+let descriptionElement = document.querySelector("#description");
