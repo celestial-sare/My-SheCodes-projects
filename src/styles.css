@@ -45,3 +45,9 @@ li::first-letter {
 .overview {
   margin-bottom: 20px;
 }
+
+.temperature-head strong {
+  color: aliceblue;
+  font-size: 63px;
+  top: 30px;
+}

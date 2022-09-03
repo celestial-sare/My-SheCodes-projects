@@ -47,9 +47,11 @@
     <div class="container-md">
       <div class="overview">
     <h1 id="city"></h1>
-    <div>
+    <div class="container" id="temperature-head">
           <strong id="temperature"></strong
-            ><span class="units">°C | <a href="#">°F</a></span>
+            ><span class="units"
+            ><a href="#" id="celsius-convert" class="active">°C</a> | 
+            <a href="#" id="fahrenheit-convert">°F</a></span>
     <ul>
       <li> Last updated at: <span id="date"></span></li>
       <li id="description">
@@ -59,10 +61,9 @@
     <div class="row">
       <div class="col-6">
         <div class="d-flex weather-temperature">
-        <img src="" 
-        id="icon"/>
+        <img src="" id="icon"
+        />
         
-          
         </div>
       </div>
 
